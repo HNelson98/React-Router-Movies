@@ -13,10 +13,11 @@ const App = () => {
   return (
     <div>
       <SavedList list={savedList} />
-      <Route path="/" component={MovieList} />
-      <Route path="/movies/:movieID" component={Movie} />
+      
+      <Route exact path="/" component={MovieList} />
+      <Route exact path="/movies/:movieID" component={Movie} />
     </div>
   );
 };
 
-export default App;
+export default App; 
